@@ -28,6 +28,7 @@ function Login(props){
                 onChange={(p) => setPassword(p.target.value)}
             />
             <button onClick={()=>login()}>Login</button>
+            <button onClick={()=>props.onShowRegister()}>Don't have an account? Register</button>
         </div>
     )
 }
